@@ -1,0 +1,79 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Final_Project_Files
+build_property.ProjectDir = C:\Users\QUIREZA IRIBERRI\Documents\Practical-Work-II\Practical-Work-II\src\Final-Project-Files\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/QUIREZA IRIBERRI/Documents/Practical-Work-II/Practical-Work-II/src/Final-Project-Files/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Final_Project_Files.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/QUIREZA IRIBERRI/Documents/Practical-Work-II/Practical-Work-II/src/Final-Project-Files/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Final_Project_Files.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/QUIREZA IRIBERRI/Documents/Practical-Work-II/Practical-Work-II/src/Final-Project-Files/ConverterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Final_Project_Files.ConverterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ConverterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ConverterPage.xaml
+
+[C:/Users/QUIREZA IRIBERRI/Documents/Practical-Work-II/Practical-Work-II/src/Final-Project-Files/LogInPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Final_Project_Files.LogInPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LogInPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LogInPage.xaml
+
+[C:/Users/QUIREZA IRIBERRI/Documents/Practical-Work-II/Practical-Work-II/src/Final-Project-Files/OperationsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Final_Project_Files.OperationsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = OperationsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = OperationsPage.xaml
+
+[C:/Users/QUIREZA IRIBERRI/Documents/Practical-Work-II/Practical-Work-II/src/Final-Project-Files/PasswordRecoveryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Final_Project_Files.PasswordRecoveryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = PasswordRecoveryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = PasswordRecoveryPage.xaml
+
+[C:/Users/QUIREZA IRIBERRI/Documents/Practical-Work-II/Practical-Work-II/src/Final-Project-Files/PrivacyProtectionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Final_Project_Files.PrivacyProtectionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = PrivacyProtectionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = PrivacyProtectionPage.xaml
+
+[C:/Users/QUIREZA IRIBERRI/Documents/Practical-Work-II/Practical-Work-II/src/Final-Project-Files/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Final_Project_Files.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/QUIREZA IRIBERRI/Documents/Practical-Work-II/Practical-Work-II/src/Final-Project-Files/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Final_Project_Files.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/QUIREZA IRIBERRI/Documents/Practical-Work-II/Practical-Work-II/src/Final-Project-Files/SignUpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Final_Project_Files.SignUpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SignUpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SignUpPage.xaml
