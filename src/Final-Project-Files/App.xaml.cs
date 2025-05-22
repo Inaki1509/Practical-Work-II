@@ -6,7 +6,9 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		MainPage = new AppShell(); 
+
+		// We set the main page of the app to be the AppShell to use the AppShell navigation
 
 	}
 }

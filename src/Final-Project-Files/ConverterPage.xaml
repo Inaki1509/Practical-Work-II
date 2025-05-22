@@ -35,6 +35,8 @@
                 HorizontalOptions="Center" 
                 Clicked="OnLogoButtonClicked" />
 
+                
+
         <Label
             Text="OPP Conversor"
             BackgroundColor="Navy"

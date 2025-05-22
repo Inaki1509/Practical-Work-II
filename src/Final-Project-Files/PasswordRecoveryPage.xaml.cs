@@ -14,14 +14,16 @@ public partial class PasswordRecoveryPage : ContentPage
     private async void OnLogoButtonClicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync($"//{nameof(LogInPage)}");
-        
+
     }
-    
+    // Redirect to the LogInPage
+
     private bool IsEmailValid(string email)
     {
         string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
         return Regex.IsMatch(email, emailPattern);
     }
+    // We use Regex and a pattern to check if the email is valid
 
     private async void OnEmailCompleted(object sender, EventArgs e)
     {
@@ -31,7 +33,7 @@ public partial class PasswordRecoveryPage : ContentPage
         {
             await DisplayAlert("Warning", "Please enter a valid email.", "OK");
             return;
-        }   
+        }
 
         if (!IsEmailValid(email))
         {
@@ -41,11 +43,13 @@ public partial class PasswordRecoveryPage : ContentPage
 
         await DisplayAlert("Email sent", "Password recovery email sent.", "OK");
     }
+    // If the email is empty or invalid, we display an alert. If it is valid, we display a success message.
 
     private async void OnBackTapped(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("..");
     }
-
+    
+    // Redirect to the previous page (LogInPage)
 
 }

@@ -14,6 +14,7 @@ public partial class LogInPage : ContentPage
 	{
 		return;
 	}
+	// We are already in the LogInPage 
 	private string csvPath = "./Practical-Work-II/ExtraFiles/User_Info.csv";
 	private bool IsUsernameValid(string username)
 	{
@@ -31,13 +32,14 @@ public partial class LogInPage : ContentPage
 		sr.Close();
 		return false;
 	}
+	// We validate the username by checking if it is in the csv, in the first column file using a StringReader
 
 	private bool IsPasswordValid(string password)
 	{
 		StringReader sr = new StringReader(File.ReadAllText(csvPath));
 		string line;
 		sr.ReadLine();
-		
+
 		while ((line = sr.ReadLine()) != null)
 		{
 			string[] fields = line.Split(',');
@@ -50,6 +52,7 @@ public partial class LogInPage : ContentPage
 		sr.Close();
 		return false;
 	}
+	// We validate the password by checking if it is in the csv file, in the second columnusing a StringReader
 
 	private async void OnLogInButtonClicked(object sender, EventArgs e)
 	{
@@ -73,6 +76,7 @@ public partial class LogInPage : ContentPage
 		}
 		await Shell.Current.GoToAsync(nameof(ConverterPage));
 	}
+	// When the user clicks the Log In button, we check if the username and password are valid, if not we show an alert, if they are valid we go to the ConverterPage
 
 	private async void OnForgotPasswordTapped(object sender, EventArgs e)
 	{
@@ -84,5 +88,6 @@ public partial class LogInPage : ContentPage
 		await Shell.Current.GoToAsync(nameof(SignUpPage));
 	}
 
+	// Redirect to the PasswordRecoveryPage and SignUpPage respectively 
 }
 

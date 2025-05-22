@@ -17,6 +17,7 @@ public partial class ConverterPage : ContentPage
     {
         await Shell.Current.GoToAsync(nameof(LogInPage));
     }
+    // Redirect to the LogInPage when the logo is clicked
 
     private void OnNumberClicked(object sender, EventArgs e)
     {
@@ -25,6 +26,7 @@ public partial class ConverterPage : ContentPage
             InputEntry.Text += btn.Text;
         }
     }
+    // Add the number to the entry when a number button is clicked
 
     private void OnLetterClicked(object sender, EventArgs e)
     {
@@ -33,22 +35,26 @@ public partial class ConverterPage : ContentPage
             InputEntry.Text += btn.Text;
         }
     }
+    // Add the letter to the entry when a letter button is clicked
 
     private void OnClearClicked(object sender, EventArgs e)
     {
         InputEntry.Text = string.Empty;
     }
+    // Clear the entry when the AC button is clicked
 
     private void OnMinusClicked(object sender, EventArgs e)
-    {        
+    {
         if (!InputEntry.Text.StartsWith("-"))
             InputEntry.Text = "-" + InputEntry.Text;
     }
+    // Add a minus sign to the entry when the minus button is clicked
 
     private async void OnOperationsClicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync($"//{nameof(OperationsPage)}");
     }
+    // Redirect to the OperationsPage 
 
     private async void OnLogoutClicked(object sender, EventArgs e)
     {
@@ -60,10 +66,13 @@ public partial class ConverterPage : ContentPage
     {
         await Shell.Current.GoToAsync($"//{nameof(LogInPage)}");
     }
+    // Redirect to the LogInPage
 
     private Converter converter = new Converter();
     private Operations ops = new Operations(";");
     private string csvPath = "./Practical-Work-II/ExtraFiles/User_Info.csv";
+
+    //Initialize the converter and a list of operations as well as the path to the csv file
 
     private async void OnDecimalToBinaryClicked(object sender, EventArgs e)
     {
@@ -90,7 +99,8 @@ public partial class ConverterPage : ContentPage
             this.ops.SaveOperations(csvPath);
         }
 
-
+        // For each conversion, try to perform the conversion using the converter and catch any exceptions that may occur (FormatException or others)
+        // Then add the operation to the list of operations and save it to the csv file
     }
 
     private async void OnDecimalTwosComplementClicked(object sender, EventArgs e)

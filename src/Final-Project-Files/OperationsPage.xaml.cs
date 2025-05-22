@@ -7,12 +7,17 @@ public partial class OperationsPage : ContentPage
         InitializeComponent();
         ShowOperations();
     }
+    // Include the ShowOperations method in the constructor
 
     private async void OnLogoButtonClicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync($"//{nameof(LogInPage)}");
     }
+
+    // Redirect to the LogInPage
+
     private string csvPath = "./Practical-Work-II/ExtraFiles/User_Info.csv";
+    // Path to the CSV file
 
     private void ShowOperations()
     {
@@ -27,12 +32,14 @@ public partial class OperationsPage : ContentPage
         }
 
         sr.Close();
+
+        // We read the CSV file and display the operations in the label of the page
     }
 
     private async void OnBackTapped(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync(nameof(ConverterPage));
     }
-
+    // Redirect to the ConverterPage
 
 }

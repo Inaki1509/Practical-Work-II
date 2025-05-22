@@ -12,5 +12,7 @@ public partial class AppShell : Shell
 		Routing.RegisterRoute(nameof(PasswordRecoveryPage), typeof(PasswordRecoveryPage));
 		Routing.RegisterRoute(nameof(SignUpPage), typeof(SignUpPage));
 		Routing.RegisterRoute(nameof(PrivacyProtectionPage), typeof(PrivacyProtectionPage));
+		
+		// Registering all of the pages that are used in the app
 	}
 }
