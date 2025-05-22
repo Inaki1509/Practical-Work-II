@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Final_Project_Files.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Final_Project_Files"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Final_Project_Files">
+
+    <ShellContent
+        Title="LogIn"
+        ContentTemplate="{DataTemplate local:LogInPage}"
+        Route="LogInPage" />
+    
+    <ShellContent
+        Title="SignUp"
+        ContentTemplate="{DataTemplate local:SignUpPage}"
+        Route="SignUpPage" />
+
+    <ShellContent
+        Title="Converter"
+        ContentTemplate="{DataTemplate local:ConverterPage}"
+        Route="ConverterPage" />
+
+    <ShellContent
+        Title="Operations"
+        ContentTemplate="{DataTemplate local:OperationsPage}"
+        Route="OperationsPage" />
+
+    <ShellContent
+        Title="Password Recovery"
+        ContentTemplate="{DataTemplate local:PasswordRecoveryPage}"
+        Route="PasswordRecoveryPage" />
+
+        <ShellContent
+        Title="Privacy Protection"
+        ContentTemplate="{DataTemplate local:PrivacyProtectionPage}"
+        Route="PrivacyProtectionPage" />
+
+</Shell>

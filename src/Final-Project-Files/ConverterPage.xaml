@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+
+    BackgroundColor="White"
+
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Final_Project_Files.ConverterPage">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+
+            Padding="30,0"
+            Spacing="25">
+
+        <HorizontalStackLayout 
+
+            HorizontalOptions="FillAndExpand" 
+            Spacing="10">
+            
+            <Button Text="Operations" Clicked="OnOperationsClicked" HorizontalOptions="StartAndExpand"/>
+            <Button Text="Log Out" Clicked="OnLogoutClicked" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Exit" Clicked="OnExitClicked" HorizontalOptions="EndAndExpand"/>
+
+        </HorizontalStackLayout>
+
+
+        <ImageButton
+                x:Name="LogoButton"
+                Source="logo_ufv_header.png"
+                HeightRequest="100"
+                Aspect="AspectFit"
+                SemanticProperties.Description="logo ufv header"
+                HorizontalOptions="Center" 
+                Clicked="OnLogoButtonClicked" />
+
+        <Label
+            Text="OPP Conversor"
+            BackgroundColor="Navy"
+            TextColor="White"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1"
+            HorizontalOptions="FillAndExpand" />
+            
+        <Label
+            Text="Converter"
+            FontSize="32"
+            BackgroundColor="Navy"
+            TextColor="White"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" 
+            HorizontalOptions="Center" />
+
+         <Entry 
+            x:Name="InputEntry"
+            Placeholder="Enter the number to convert (Remember to use the appropiate format)"
+            FontSize="28"
+            HorizontalOptions="FillAndExpand"
+            TextColor="Black"
+            BackgroundColor="#EEE"
+            IsReadOnly="True"
+            HorizontalTextAlignment="End"
+            Margin="0,10,0,10"/>
+
+        <Grid 
+            RowSpacing="10" 
+            ColumnSpacing="10">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="9" Grid.Row="0" Grid.Column="0" Clicked="OnNumberClicked" TextColor="Black"/>
+            <Button Text="8" Grid.Row="0" Grid.Column="1" Clicked="OnNumberClicked" TextColor="Black"/>
+            <Button Text="7" Grid.Row="0" Grid.Column="2" Clicked="OnNumberClicked" TextColor="Black"/>
+            <Button Text="AC" Grid.Row="0" Grid.Column="3" Clicked="OnClearClicked" TextColor="Black"/>
+            <Button Text="6" Grid.Row="1" Grid.Column="0" Clicked="OnNumberClicked" TextColor="Black"/>
+            <Button Text="5" Grid.Row="1" Grid.Column="1" Clicked="OnNumberClicked" TextColor="Black"/>
+            <Button Text="4" Grid.Row="1" Grid.Column="2" Clicked="OnNumberClicked" TextColor="Black"/>
+            <Button Text="-" Grid.Row="1" Grid.Column="3" Clicked="OnMinusClicked" TextColor="Black"/>
+            <Button Text="3" Grid.Row="2" Grid.Column="0" Clicked="OnNumberClicked" TextColor="Black"/>
+            <Button Text="2" Grid.Row="2" Grid.Column="1" Clicked="OnNumberClicked" TextColor="Black"/>
+            <Button Text="1" Grid.Row="2" Grid.Column="2" Clicked="OnNumberClicked" TextColor="Black"/>
+            <Button Text="0" Grid.Row="2" Grid.Column="3" Clicked="OnNumberClicked" TextColor="Black"/>
+
+
+            <Button Text="A" Grid.Row="3" Grid.Column="0" Clicked="OnLetterClicked" TextColor="Black"/>
+            <Button Text="B" Grid.Row="3" Grid.Column="1" Clicked="OnLetterClicked" TextColor="Black"/>
+            <Button Text="C" Grid.Row="3" Grid.Column="2" Clicked="OnLetterClicked" TextColor="Black"/>
+            <Button Text="D" Grid.Row="4" Grid.Column="0" Clicked="OnLetterClicked" TextColor="Black"/>
+            <Button Text="E" Grid.Row="4" Grid.Column="1" Clicked="OnLetterClicked" TextColor="Black"/>
+            <Button Text="F" Grid.Row="4" Grid.Column="2" Clicked="OnLetterClicked" TextColor="Black"/>
+       
+
+       
+        
+            <Button Text="DecimalToBinary" Grid.Row="0" Grid.Column="4" Clicked="OnDecimalToBinaryClicked" TextColor="Black"/>
+            <Button Text="DecimalToTwosComplement" Grid.Row="1" Grid.Column="4" Clicked="OnDecimalTwosComplementClicked" TextColor="Black"/>
+            <Button Text="DecimalToOctal" Grid.Row="2" Grid.Column="4" Clicked="OnDecimalToOctalClicked" TextColor="Black"/>
+            <Button Text="DecimalToHexadecimal" Grid.Row="3" Grid.Column="4" Clicked="OnDecimalToHexadecimalClicked" TextColor="Black"/>
+            <Button Text="BinaryToDecimal" Grid.Row="4" Grid.Column="4" Clicked="OnBinaryToDecimalClicked" TextColor="Black"/>
+            <Button Text="TwosComplementToDecimal" Grid.Row="5" Grid.Column="4" Clicked="OnTwosComplementToDecimalClicked" TextColor="Black"/>
+            <Button Text="OctalToDecimal" Grid.Row="6" Grid.Column="4" Clicked="OnOctalToDecimalClicked" TextColor="Black"/>
+            <Button Text="HexadecimalToDecimal" Grid.Row="7" Grid.Column="4" Clicked="OnHexadecimalToDecimalClicked" TextColor="Black"/>
+
+        </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

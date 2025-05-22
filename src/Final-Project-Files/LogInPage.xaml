@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    
+    BackgroundColor="White"
+
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Final_Project_Files.LogInPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <ImageButton
+                x:Name="LogoButton"
+                Source="logo_ufv_header.png"
+                HeightRequest="100"
+                Aspect="AspectFit"
+                SemanticProperties.Description="logo ufv header"
+                HorizontalOptions="Center" 
+                Clicked="OnLogoButtonClicked" />
+
+            <Label
+                Text="OPP Conversor"
+                BackgroundColor="Navy"
+                TextColor="White"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="FillAndExpand" />
+            
+            <Label
+                Text="Log In"
+                FontSize="32"
+                BackgroundColor="Navy"
+                TextColor="White"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" 
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Please enter your username and password"
+                Style="{StaticResource SubHeadline}"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Please enter your username and password" />
+
+            <Label
+                Text="Username"
+                Style="{StaticResource SubHeadline}"
+                FontSize="25"
+                TextColor="Navy"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Please enter your username" />
+
+            <Entry
+                x:Name="UsernameEntry"
+                TextColor="Black"
+                Placeholder="Enter your username"
+                Keyboard="Default" />
+
+            <Label
+                Text="Password"
+                Style="{StaticResource SubHeadline}"
+                FontSize="25"
+                TextColor="Navy"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Please enter your password" />
+
+            <Entry
+                x:Name="PasswordEntry"
+                TextColor="Black"
+                Placeholder="Enter your password"
+                IsPassword="True"
+                Keyboard="Default" />
+
+            <Button
+                x:Name="LogInButton"
+                Text="Log In" 
+                SemanticProperties.Hint="Click to log in"
+                Clicked="OnLogInButtonClicked" />
+            
+            <Label Text="Forgot Password?"
+                x:Name="ForgotPassword"
+                TextColor="Blue"
+                HorizontalOptions="Center"
+                FontAttributes="Bold">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                    Tapped="OnForgotPasswordTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label Text="New User? Sign Up"
+                x:Name="SignUp"
+                TextColor="Blue"
+                HorizontalOptions="Center"
+                FontAttributes="Bold">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                    Tapped="OnSignUpTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

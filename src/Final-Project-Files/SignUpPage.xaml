@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+
+    BackgroundColor="White"
+
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Final_Project_Files.SignUpPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <ImageButton
+                x:Name="LogoButton"
+                Source="logo_ufv_header.png"
+                HeightRequest="100"
+                Aspect="AspectFit"
+                SemanticProperties.Description="logo ufv header"
+                HorizontalOptions="Center" 
+                Clicked="OnLogoButtonClicked" />
+
+            <Label
+                Text="OPP Conversor"
+                BackgroundColor="Navy"
+                TextColor="White"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="Sign Up"
+                FontSize="32"
+                BackgroundColor="Navy"
+                TextColor="White"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Please enter a username and password"
+                TextColor="Navy"
+                FontSize="28"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Please enter a username and password" />
+
+            <Label
+                Text="Enter a username"
+                Style="{StaticResource SubHeadline}"
+                FontSize="25"
+                TextColor="Navy"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Please enter a username" />
+
+            <Label
+                Text="Remember that the username and password cannot be the same"
+                Style="{StaticResource SubHeadline}"
+                FontSize="15"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Username Disclaimer" />
+
+            <Entry
+                x:Name="UsernameEntry"
+                TextColor="Black"
+                Placeholder="Enter your username"
+                Keyboard="Default" />
+
+            <Label
+                Text="Enter your email"
+                Style="{StaticResource SubHeadline}"
+                FontSize="25"
+                TextColor="Navy"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Please enter your email" />
+            
+            <Entry
+                x:Name="EmailEntry"
+                TextColor="Black"
+                Placeholder="Enter your email"
+                Keyboard="Email" />
+
+            <Label
+                Text="Select a password"
+                Style="{StaticResource SubHeadline}"
+                FontSize="25"
+                TextColor="Navy"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Please enter a password" />
+            
+            <Label
+                Text="Your password must be at least 8 characters long, including one upper and one lower case letter, one number, and one special symbol"
+                Style="{StaticResource SubHeadline}"
+                FontSize="15"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Password Disclaimer" />
+
+            <Entry
+                x:Name="PasswordEntry"
+                TextColor="Black"
+                Placeholder="Enter your password"
+                IsPassword="True"
+                Keyboard="Default" />
+
+            <Label
+                Text="Please confirm your password"
+                Style="{StaticResource SubHeadline}"
+                FontSize="15"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Password Disclaimer" />
+
+            <Entry
+                x:Name="ConfirmPasswordEntry"
+                TextColor="Black"
+                Placeholder="Confirm your password"
+                IsPassword="True"
+                Keyboard="Default" />
+
+            <Label
+                Text="Accept Terms and Conditions"
+                Style="{StaticResource SubHeadline}"
+                FontSize="20"
+                TextColor="Navy"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Password Disclaimer" />
+
+            <CheckBox
+                x:Name="PrivacyPolicyBox"
+                Color="Navy"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+            <Label
+                Text="I have read and accept the privacy policy"
+                Style="{StaticResource SubHeadline}"
+                FontSize="15"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Password Disclaimer" />
+
+            <Label 
+                x:Name="PrivacyPolicyLabel"
+                Text="Privacy Policy"
+                FontSize="25"
+                TextColor="Navy"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Go to Privacy Policy">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                    Tapped="OnPrivacyPolicyTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Button
+                x:Name="SignUpButton"
+                Text="Sign Up" 
+                SemanticProperties.Hint="Click to sign up"
+                Clicked="OnSignUpButtonClicked" />
+            
+            <Label 
+                Text="Already signed up? Log In"
+                x:Name="LogIn"
+                TextColor="Blue"
+                HorizontalOptions="Center"
+                FontAttributes="Bold">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                    Tapped="OnLogInTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

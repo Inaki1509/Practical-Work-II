@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+
+    BackgroundColor="White"
+
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Final_Project_Files.OperationsPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <ImageButton
+                x:Name="LogoButton"
+                Source="logo_ufv_header.png"
+                HeightRequest="100"
+                Aspect="AspectFit"
+                SemanticProperties.Description="logo ufv header"
+                HorizontalOptions="Center" 
+                Clicked="OnLogoButtonClicked" />
+
+            <Label
+                Text="OPP Conversor"
+                BackgroundColor="Navy"
+                TextColor="White"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="Operations"
+                FontSize="32"
+                BackgroundColor="Navy"
+                TextColor="White"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="Center" />
+
+           <Label
+                x:Name="Operations"
+                FontSize="15"
+                TextColor="Black"
+                LineBreakMode="WordWrap" />
+
+            <Label Text="GoBack"
+                x:Name="GoBack"
+                TextColor="Blue"
+                HorizontalOptions="Center"
+                FontAttributes="Bold">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                    Tapped="OnBackTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
