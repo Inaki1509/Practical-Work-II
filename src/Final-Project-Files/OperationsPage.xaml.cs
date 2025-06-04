@@ -16,7 +16,7 @@ public partial class OperationsPage : ContentPage
 
     // Redirect to the LogInPage
 
-    private string csvPath = "./Practical-Work-II/ExtraFiles/User_Info.csv";
+    private string csvPath = "./Files/User_Info.csv";
     // Path to the CSV file
 
     private void ShowOperations()

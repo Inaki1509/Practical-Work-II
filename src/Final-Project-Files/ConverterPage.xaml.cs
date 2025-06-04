@@ -70,7 +70,7 @@ public partial class ConverterPage : ContentPage
 
     private Converter converter = new Converter();
     private Operations ops = new Operations(";");
-    private string csvPath = "./Practical-Work-II/ExtraFiles/User_Info.csv";
+    private string csvPath = "./Files/User_Info.csv";
 
     //Initialize the converter and a list of operations as well as the path to the csv file
 

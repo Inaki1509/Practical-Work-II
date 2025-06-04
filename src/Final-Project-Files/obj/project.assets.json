@@ -33167,11 +33167,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\QUIREZA IRIBERRI\\Documents\\Practical-Work-II\\Practical-Work-II\\src\\Final-Project-Files\\Final-Project-Files.csproj",
+      "projectUniqueName": "C:\\Users\\QUIREZA IRIBERRI\\Downloads\\practical_work_ii_oop\\Solution\\src\\Final-Project-Files\\Final-Project-Files.csproj",
       "projectName": "Final-Project-Files",
-      "projectPath": "C:\\Users\\QUIREZA IRIBERRI\\Documents\\Practical-Work-II\\Practical-Work-II\\src\\Final-Project-Files\\Final-Project-Files.csproj",
+      "projectPath": "C:\\Users\\QUIREZA IRIBERRI\\Downloads\\practical_work_ii_oop\\Solution\\src\\Final-Project-Files\\Final-Project-Files.csproj",
       "packagesPath": "C:\\Users\\QUIREZA IRIBERRI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\QUIREZA IRIBERRI\\Documents\\Practical-Work-II\\Practical-Work-II\\src\\Final-Project-Files\\obj\\",
+      "outputPath": "C:\\Users\\QUIREZA IRIBERRI\\Downloads\\practical_work_ii_oop\\Solution\\src\\Final-Project-Files\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

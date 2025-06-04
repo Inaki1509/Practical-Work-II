@@ -114,7 +114,7 @@ public partial class SignUpPage : ContentPage
     }
     // Redirect to the PrivacyProtectionPage
 
-    private string csvPath = "./Practical-Work-II/ExtraFiles/User_Info.csv";
+    private string csvPath = "./Files/User_Info.csv";
     private void SaveUser(string username, string password)
     {
         string separator = ",";

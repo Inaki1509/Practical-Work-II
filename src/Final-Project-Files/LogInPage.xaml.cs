@@ -15,7 +15,7 @@ public partial class LogInPage : ContentPage
 		return;
 	}
 	// We are already in the LogInPage 
-	private string csvPath = "./Practical-Work-II/ExtraFiles/User_Info.csv";
+	private string csvPath = "./Files/User_Info.csv";
 	private bool IsUsernameValid(string username)
 	{
 		StringReader sr = new StringReader(File.ReadAllText(csvPath));
