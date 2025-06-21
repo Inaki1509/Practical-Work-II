@@ -63,7 +63,20 @@
             BackgroundColor="#EEE"
             IsReadOnly="True"
             HorizontalTextAlignment="End"
-            Margin="0,10,0,10"/>
+            Margin="0,10,0,10"
+            Focused="InputEntry_Focused"/>
+            
+        <Entry 
+            x:Name="BitNumberEntry"
+            Placeholder="Enter the bit size for the conversion."
+            FontSize="28"
+            HorizontalOptions="FillAndExpand"
+            TextColor="Black"
+            BackgroundColor="#EEE"
+            IsReadOnly="True"
+            HorizontalTextAlignment="End"
+            Margin="0,10,0,10"
+            Focused="BitNumberEntry_Focused"/>
 
         <Grid 
             RowSpacing="10" 

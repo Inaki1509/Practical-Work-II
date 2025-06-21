@@ -12,6 +12,8 @@
             Padding="30,0"
             Spacing="25">
 
+            <Button Text="Exit" Clicked="OnExitClicked" HorizontalOptions="EndAndExpand"/>
+
             <ImageButton
                 x:Name="LogoButton"
                 Source="logo_ufv_header.png"

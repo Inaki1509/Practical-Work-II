@@ -11,6 +11,12 @@ public partial class PasswordRecoveryPage : ContentPage
         InitializeComponent();
     }
 
+    private async void OnExitClicked(object sender, EventArgs e)
+    {
+        Environment.Exit(0);
+    }
+    // Exit the program execution
+
     private async void OnLogoButtonClicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync($"//{nameof(LogInPage)}");

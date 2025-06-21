@@ -10,6 +10,12 @@ public partial class LogInPage : ContentPage
 		InitializeComponent();
 	}
 
+	private async void OnExitClicked(object sender, EventArgs e)
+    {
+        Environment.Exit(0);
+    }
+    // Exit the program execution
+
 	private void OnLogoButtonClicked(object sender, EventArgs e)
 	{
 		return;
@@ -20,9 +26,16 @@ public partial class LogInPage : ContentPage
 	{
 		StringReader sr = new StringReader(File.ReadAllText(csvPath));
 		string line;
+		string separator = ",";
+
 		while ((line = sr.ReadLine()) != null)
 		{
-			string[] fields = line.Split(',');
+			if (string.IsNullOrWhiteSpace(line))
+			{
+				continue;
+			}
+
+			string[] fields = line.Split(separator);
 
 			if (fields[0] == username)
 			{
@@ -38,11 +51,16 @@ public partial class LogInPage : ContentPage
 	{
 		StringReader sr = new StringReader(File.ReadAllText(csvPath));
 		string line;
-		sr.ReadLine();
-
+		string separator = ",";
+		
 		while ((line = sr.ReadLine()) != null)
 		{
-			string[] fields = line.Split(',');
+			if (string.IsNullOrWhiteSpace(line))
+			{
+				continue;
+			}
+
+			string[] fields = line.Split(separator);
 
 			if (fields[1] == password)
 			{
@@ -74,7 +92,8 @@ public partial class LogInPage : ContentPage
 			await DisplayAlert("Incorrect password", "Please try again", "OK");
 			return;
 		}
-		await Shell.Current.GoToAsync(nameof(ConverterPage));
+		await Shell.Current.GoToAsync($"ConverterPage?username={username}");
+		//We go to ConverterPage but we pass the username as a query to have it available to increment operation count
 	}
 	// When the user clicks the Log In button, we check if the username and password are valid, if not we show an alert, if they are valid we go to the ConverterPage
 
