@@ -104,7 +104,7 @@ namespace Final_Project_Files
                 }
             }
 
-            File.WriteAllLines(filePath, lines); // Reescribir el archivo completo
+            File.WriteAllLines(filePath, lines);
 
 
         }
